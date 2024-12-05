@@ -8,9 +8,9 @@ typedef struct
     char Letra;
     int Numero_do_agente;
     int poder;
-    int altura;
+    float altura;
     int idade;
-    int peso;
+    float peso;
     //bool
 }Agente;
 void leString(char texto [], int tam)
@@ -20,7 +20,7 @@ void leString(char texto [], int tam)
     texto[strcspn(texto,"\n")] = '\0';
 
 }
-void Cadastro(Agente agentes [])
+void Cadastro(Agente agentes [], int tam)
 {   
     for (int i = 0; i < tam; i++)
     {
@@ -28,14 +28,24 @@ void Cadastro(Agente agentes [])
     leString(agentes[tam].Nome,31);
 
     printf("Letra: ");
-    scanf("%c", agentes[tam].letra);
+    scanf("%c", agentes[tam].Letra);
 
     printf("Numero do agente: ");
     scanf("%d",agentes[tam].Numero_do_agente);
 
     printf("Poder do agente: ");
-    scanf("%d", agentes)
-        
+    scanf("%d", agentes[tam].poder);
+
+    printf("Altura: ");
+    scanf("%.2f",agentes[tam].altura);
+
+    printf("Idade: ");
+    scanf("%d",agentes[tam].idade);
+
+    printf("Peso: ");
+    scanf("%.2f",agentes[tam].peso);
+
+    
     }
     
 
