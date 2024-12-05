@@ -53,6 +53,23 @@ void Cadastro(Agente agentes [], int tam)
 
 }
 
+void listar(Agente agentes[], int tam)
+
+{
+    for (int i = 0; i < tam; i++)
+    {
+        printf("Nome: %s",agentes[tam].Nome);
+        printf("Letra: %c",agentes[tam].Letra);
+        printf("Numero do agente: %d",agentes[tam].Numero_do_agente);
+        printf("Poder: %d",agentes[tam].poder);
+        printf("Altura: %.2f",agentes[tam].altura);
+        printf("Idade: %d",agentes[tam].idade);
+        printf("Peso: %.2f",agentes[tam].peso);  
+    }
+    
+
+
+}
 int main (){
 
 
