@@ -28,22 +28,22 @@ void Cadastro(Agente agentes [], int tam)
     leString(agentes[tam].Nome,31);
 
     printf("Letra: ");
-    scanf("%c", agentes[tam].Letra);
+    scanf("%c", &agentes[tam].Letra);
 
     printf("Numero do agente: ");
-    scanf("%d",agentes[tam].Numero_do_agente);
+    scanf("%d",&agentes[tam].Numero_do_agente);
 
     printf("Poder do agente: ");
-    scanf("%d", agentes[tam].poder);
+    scanf("%d", &agentes[tam].poder);
 
     printf("Altura: ");
-    scanf("%.2f",agentes[tam].altura);
+    scanf("%.2f",&agentes[tam].altura);
 
     printf("Idade: ");
-    scanf("%d",agentes[tam].idade);
+    scanf("%d",&agentes[tam].idade);
 
     printf("Peso: ");
-    scanf("%.2f",agentes[tam].peso);
+    scanf("%.2f",&agentes[tam].peso);
 
     
     }
@@ -55,7 +55,6 @@ void Cadastro(Agente agentes [], int tam)
 
 int main (){
 
-    printf("coisa nova");
 
     Agente agentes [33];
 
