@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+//vambora
 typedef struct 
 {
     char Nome [31];
@@ -54,6 +54,8 @@ void Cadastro(Agente agentes [], int tam)
 }
 
 int main (){
+
+    printf("coisa nova");
 
     Agente agentes [33];
 
