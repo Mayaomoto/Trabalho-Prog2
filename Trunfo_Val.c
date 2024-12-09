@@ -13,6 +13,10 @@ typedef struct
     float peso;
     //bool
 }Agente;
+
+struct *estrutura = malloc(33,sizeof(struct));
+free(estrutura);
+
 void leString(char texto [], int tam)
 {
     setbuf(stdin,NULL);
