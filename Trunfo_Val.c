@@ -14,8 +14,11 @@ typedef struct
     //bool
 }Agente;
 
-struct *estrutura = malloc(33,sizeof(struct));
-free(estrutura);
+Agente *cadastroteste = (Agente*) malloc (33*sizeof(Agente));   
+
+strcpy(cadastroteste[0].Nome,"Sage");
+
+
 
 void leString(char texto [], int tam)
 {
@@ -77,7 +80,6 @@ void listar(Agente agentes[], int tam)
 int main (){
 
 
-    Agente agentes [33];
 
 
 
