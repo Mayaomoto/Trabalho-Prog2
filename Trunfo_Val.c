@@ -14,10 +14,6 @@ typedef struct
     //bool
 }Agente;
 
-Agente *cadastroteste = (Agente*) malloc (33*sizeof(Agente));   
-
-strcpy(cadastroteste[0].Nome,"Sage");
-
 
 
 void leString(char texto [], int tam)
@@ -78,11 +74,17 @@ void listar(Agente agentes[], int tam)
 
 }
 int main (){
+    int i;
 
-
-
+    Agente agentes [33];
+    Agente  *vetorAgentes = (Agente*)malloc(i * sizeof(Agente));
+    if(vetorAgentes == NULL){
+        perror("Erro na alocacao de memoria!\n");
+        exit(1);
+    }
 
 
 
     return 0;
 }
+        
