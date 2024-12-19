@@ -74,11 +74,13 @@ void listar(Agente agentes[], int tam)
 
 }
 int main (){
-    int i;
-
     Agente agentes [33];
-    Agente  *vetorAgentes = (Agente*)malloc(i * sizeof(Agente));
-    if(vetorAgentes == NULL){
+    int i;
+    Cadastro(agentes,33);
+    listar(agentes, 33);
+    
+    Agente *vetorAgente = (Agente*)malloc(i * sizeof(Agente));
+    if(vetorAgente == NULL){
         perror("Erro na alocacao de memoria!\n");
         exit(1);
     }
@@ -87,4 +89,3 @@ int main (){
 
     return 0;
 }
-        
